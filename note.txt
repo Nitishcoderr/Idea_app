@@ -1,0 +1,17 @@
+--------->REST<--------- 
+ Representational State Transfer
+
+           (App)
+           1->Frontened
+           2->Backend
+           3->Databases
+
+
+--> Node , Express , Mongo , ( Token Based Auth --> JWT )
+
+      idea App --> Admin, User
+
+        Register,Login 
+        create idea
+        Update idea
+        delete idea
