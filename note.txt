@@ -23,3 +23,7 @@ Step -2--> a) Router (reception) b)Controller (waiter - Every thing is managed b
       our approach        Model --> controller --> Router
 
 -----> 1st approach to store data of user and admin
+
+Step -3 --> bcrypt using to protect password
+
+Now we create API for SignUp , login using JWT

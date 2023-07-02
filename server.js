@@ -4,7 +4,7 @@ const serverConfig = require('./configs/server.config.js')
 const dbConfig = require('./configs/db.config.js')
 const mongoose = require('mongoose')
 const userModel = require('./models/user.model.js')
-
+const bcrypt = require('bcrypt')
 const app = express()
 
 
@@ -36,12 +36,13 @@ async function init() {
         console.log("Admin user already present");
         return;
     }
+    
     admin = await userModel.create({
         name: "Nitish",
         userId: "admin",
         email: "admin@gmail.com",
         userType: "ADMIN",
-        password: "Welcome"
+        password: bcrypt.hashSync("Welcome",8)
     })
     console.log(admin);
 }
