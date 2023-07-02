@@ -19,3 +19,7 @@
 Project --> Node.js Project
 
 step -1 --> Create server
+Step -2--> a) Router (reception) b)Controller (waiter - Every thing is managed by controller) c)Model (cook)
+      our approach        Model --> controller --> Router
+
+-----> 1st approach to store data of user and admin
